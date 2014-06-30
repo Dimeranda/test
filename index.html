@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet"  href="css/header.css"/>
+    <link rel="stylesheet"  href="css/content.css"/>
+    <link rel="stylesheet"  href="css/slider.css"/>
+    <link rel="stylesheet"  href="css/footer.css"/>
+
+    <link rel="stylesheet" media="(max-width: 767px)"  href="css/mobile.css" />
+    <link rel="stylesheet" media="(max-width: 905px)"  href="css/tablet.css" />
+    <script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+    <title>Road</title>
+</head>
+
+<body>
+<header>
+
+    <div class="headerPart clearfix">
+        <a href="index.html" class="logo"><img src="img/logo.png"></a>
+        <a href="#">Rapid Objective-C Applications Development</a>
+        <div class="menu clearfix" id="menu">
+
+            <span class="iconMobMenu clearfix"></span>
+            <div class="menuBlock">Introduction</div>
+            <a href="#" class="cat clearfix" id="link"></a>
+
+            <nav class="mobNav links clearfix" >
+                <a href="#">Github</a>
+                <a href="#">Testimonials </a>
+                <a href="#">Resources</a>
+                <a href="#">Projects </a>
+                <a href="#"><img src="img/twitter.png"></a>
+            </nav>
+
+
+        </div>
+    </div>
+
+
+    <div class="clearfix headerContent headerPart">
+        <div class="headerBlock right">
+            <h1>Complex apps. Easier.</h1>
+            <p>
+                Praesent commodo cursus magna, vel
+                scelerisque nisl consectetur et. Nullam id dolor
+                id nibh ultricies vehicula ut id elit. Aenean lacinia
+                bibendum nulla sed consectetur.
+            </p>
+
+        </div>
+
+
+        <div class="information headerBlock">
+            <p class="versionGit">Get the latest version from Github:</p>
+            <div class="numb">
+                <div class="period">
+                    <span>Starred</span>
+                    <p>18</p>
+                </div>
+
+                <div class="period">
+                    <span>Forked</span>
+                    <p>9</p>
+                </div>
+            </div>
+            <a href="#" class="download"> Download Road v1.0</a>
+
+            <p class="descrip">Keep up to date on new releases, additonal tools,
+                and techniques by subscribing to our newsletter:
+            </p>
+
+            <form>
+                <input type="text">
+                <input type="submit" value="Sign up">
+            </form>
+
+        </div>
+
+
+    </div>
+
+    <div class="strip headerPart">
+
+        <div class="wrapStrip ">
+
+
+            <a href="#" class="more"> More</a>
+            <p>RoadUsers0943</p>
+
+
+                <span>Nullam quis risus eget urna mollis ornare vel eu leo.
+                    Vestibulum id ligula porta felis euismod semper.
+                </span>
+
+        </div>
+
+    </div>
+</header>
+
+
+<div class="content wrap">
+
+
+
+<div class="contentText">
+    <h2>A Framework for App Builders</h2>
+
+    <p class="paragraph">Maecenas faucibus mollis interdum. Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla.
+        Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+
+    <p class="inserted paragraph">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget
+        lacinia odio sem nec elit. Vivamus sagittis lacus vel augue laoreet
+        rutrum faucibus dolor auctor.
+    </p>
+
+
+
+    <p class="invis inserted paragraph">Donec ullamcorper nulla non metus auctor
+        fringilla.Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+        auctor. Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper.
+    </p>
+
+</div>
+
+<div class="tabsComponent"  id="tabs">
+    <ul class="tabs">
+        <li class="tab active" id="tab1">
+            <div>Web Services</div>
+            <span class="toggler  icon" id="b1">1</span>
+
+            <section class="description">
+                <p class="topic">
+                    Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
+                    eget lacinia odio sem nec elit. Vestibulum id ligula porta felis
+                    euismod semper. Cum sociis natoque penatibus et magnis.
+                </p>
+                <button class ="viewCode"   id="code2"> View Code Snippet</button>
+            </section>
+
+        </li>
+
+
+
+        <li class="tab" id="tab2">
+            <div>Serialization</div>
+            <span class="toggler  icon" id="b2">1</span>
+
+            <section class="description">
+                <p class="topic">
+                    Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam
+                    eget risus varius blandit sit amet non magna. Integer posuere erat
+                    a ante venenatis dapibus posuere velit
+                </p>
+
+
+                    <button class ="viewCode"   id="code2"> View Code Snippet</button>
+
+            </section>
+        </li>
+    </ul>
+
+    <ul class="tabsContent">
+
+        <li id="contentTab1" class="tabContent active">
+            <code id="contentsCode1" class="code">
+
+                <span class="rfAttibute">RF_ATTRIBUTE</span>(<span class="service">RFWebService, serviceRoot = @"http://headers.jsontest.com/")</span><br>
+                @interface JsonTestWebClient : RFWebServiceClient<br><br>
+
+                <span class="attribute">RF_ATTRIBUTE</span>(RFWebServiceCall, method =<span class="text"> @"GET"</span>, prototypeClass =
+                [ <span class="attribute">MyWebServiceResponse</span> <span class="date"> class]</span>)<br>
+                <span class="attribute">RF_ATTRIBUTE</span>(RFWebServiceHeader, headerFields = @{<span class="text">@"Text" : @"A lot of text",</span><br>
+                <span class="space">@"Number"</span> : [<span class="numbers">@1434252.234</span> stringValue],<br>
+                <span class="text space">@"Date"</span> : [[<span class="date">NSDate</span> dateWithTimeIntervalSince1970: <span class="text">100000000</span>] description]})<br>
+                - ( <span class="attribute">id &#60RFWebServiceCancellable&#62</span>) echoRequestHeadersAsJSONWithSuccess:(void(^)
+                (<span class="date">MyWebServiceResponse</span><br> result))<span class="status">successBlock</span>
+                failure:(void(^)(<span class="status">NSError</span> *error))failureBlock;<br>
+                <br>
+
+                @ end
+
+            </code>
+        </li>
+
+        <li id="contentTab2" class="tabContent">
+            <code id="contentsCode2" class="code">
+                In computer science, in the context of data storage, serialization is the process
+                of translating data structures or object state into a format that can be stored
+                (for example, in a file or memory buffer, or transmitted across a network connection link)
+                and reconstructed later in the same or another computer environment. When the resulting series
+                of bits is reread according to the serialization format, it can be used to create a semantically
+                identical clone of the original object. For many complex objects, such as those that make extensive
+                use of references, this process is not straightforward. Serialization of object-oriented objects
+                does not include any of their associated methods with which they were previously inextricably linked.
+            </code>
+        </li>
+    </ul>
+</div>
+
+<div class="slider">
+
+
+    <ul class="sliderContent">
+
+        <li class=" navContent active clearfix">
+            <blockquote>
+                "At EPAM we design and build iOS apps both for our clients and for our internal
+                employees.  iOS ROAD Framework helps us deliver native iOS apps that require
+                integration with web services, which is the majority apps that we build, faster and
+                produce much more maintainable codebase. Highly recommend!"
+            </blockquote>
+            <div class="nameCompany">
+                <div class="nameStatus">
+                    <span>Yevgeniy Galper</span>
+
+                    <p>Director, Mobile Competency Center</p>
+                </div>
+                <div class="companyLogo">
+                    <a href="http://www.epam.com/"><img src="img/companylogo.png"></a>
+                </div>
+            </div>
+        </li>
+
+
+        <li class="navContent clearfix">
+            <blockquote>
+                "2At EPAM we design and build iOS apps both for our clients and for our internal
+                employees.  iOS ROAD Framework helps us deliver native iOS apps that require
+                integration with web services, which is the majority apps that we build, faster and
+                produce much more maintainable codebase. Highly recommend!"
+            </blockquote>
+            <div class="nameStatus">
+                <span>Yevgeniy Galper</span>
+
+                <p>Director, Mobile Competency Center</p>
+            </div>
+            <div class="companyLogo">
+                <a href="http://www.epam.com/"><img src="img/companylogo.png"></a>
+            </div>
+        </li>
+
+
+        <li class="navContent clearfix">
+            <blockquote>
+                "3At EPAM we design and build iOS apps both for our clients and for our internal
+                employees.  iOS ROAD Framework helps us deliver native iOS apps that require
+                integration with web services, which is the majority apps that we build, faster and
+                produce much more maintainable codebase. Highly recommend!"
+            </blockquote>
+
+
+            <div class="nameStatus">
+                <span>Yevgeniy Galper</span>
+
+                <p>Director, Mobile Competency Center</p>
+            </div>
+
+            <div class="companyLogo">
+                <a href="http://www.epam.com/"><img src="img/companylogo.png"></a>
+            </div>
+
+
+
+        </li>
+    </ul>
+
+    <ul class="sliderNav clearfix">
+        <li class=" nav active">1</li>
+        <li  class="nav">2</li>
+        <li class="nav">3</li>
+    </ul>
+</div>
+
+
+<div class="list clearfix">
+    <div>
+
+        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Sed posuere consectetur
+            est at lobortis. Nulla vitae elit libero, a pharetra augue. Cras mattis consectetur
+            purus sit amet fermentum. Nullam quis risus eget urna mollis ornare vel eu leo.
+        </p>
+
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis,
+            est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis
+            interdum. Nulla vitae elit libero, a pharetra augue. Maecenas faucibus mollis interdum.
+        </p>
+    </div>
+
+
+    <div>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis,
+            est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis
+            interdum. Nulla vitae elit libero, a pharetra augue. Maecenas faucibus mollis interdum.
+        </p>
+    </div>
+</div>
+
+
+</div>
+
+<footer>
+    <div class="wrap mobFooter">
+        <div class="leftColumn">
+
+            <a href="index.html"><img src="img/logo-2.png"> </a>
+            <a href="index.html" class="logoAddition desktop">rapid objective-c applications development</a>
+        </div>
+
+        <div class="rightColumn mob">
+            <nav class="links mob">
+                <a href="#">Github</a>
+                <a href="#">Testimonials</a>
+                <a href="#">Resources</a>
+                <a href="#">Projects</a>
+            </nav>
+        </div>
+
+
+
+
+    </div>
+</footer>
+<script src="js/js.js"> </script>
+</body>
+
+</html>
